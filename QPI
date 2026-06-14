@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantro Planlytics International LLC | QPI Prequalification Engine</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        qpi: {
+                            midnight: '#0F172A',
+                            charcoal: '#1E293B',
+                            gold: '#D4AF37'
+                        }
+                    },
+                    letterSpacing: {
+                        widestpx: '0.3em',
+                        ultra: '0.5em'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-qpi-midnight text-white antialiased selection:bg-qpi-gold selection:text-qpi-midnight pb-16 md:pb-0">
+
+    <!-- FIXED DESKTOP NAVIGATION -->
+    <nav class="fixed top-0 w-full z-40 bg-qpi-midnight/90 backdrop-blur-md border-b border-slate-900/60 hidden md:block">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex flex-col">
+                <span class="text-base font-bold tracking-widest text-qpi-gold">QUANTRO PLANLYTICS</span>
+                <span class="text-[9px] uppercase tracking-[0.38em] text-slate-400 font-light -mt-0.5">International LLC</span>
+            </div>
+            <div class="flex items-center gap-6 text-xs uppercase tracking-widest text-slate-300">
+                <a href="#hero" class="hover:text-qpi-gold transition-colors">Home</a>
+                <a href="#about" class="hover:text-qpi-gold transition-colors">About Us</a>
+                <a href="#engineering" class="hover:text-qpi-gold transition-colors">Engineering & BIM</a>
+                <a href="#specialities" class="hover:text-qpi-gold transition-colors">Speciality & Sourcing</a>
+                <a href="#team" class="hover:text-qpi-gold transition-colors">Team Matrix</a>
+                <a href="#credentials" class="hover:text-qpi-gold transition-colors">Credentials</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CINEMATIC HERO SECTION WITH HIGH-QUALITY 3D INTERIOR BACKGROUND -->
+    <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden px-4 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1920&q=90'); text-shadow: 0 4px 12px rgba(0,0,0,0.8);">
+        <!-- Deep Cinematic Dark Overlays to ensure text legibility across all screen sizes -->
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-black/80 via-qpi-midnight/70 to-qpi-midnight"></div>
+        <div class="absolute inset-0 z-0 opacity-20 bg-[radial-gradient(#1E293B_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <!-- Architectural Soft Gold Light Leak -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 md:left-1/4 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-qpi-gold/10 md:bg-qpi-gold/5 rounded-full blur-[80px] md:blur-[120px] pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto text-center space-y-6 sm:space-y-8 mt-12">
+            <div class="space-y-3 sm:space-y-4 animate-fade-in">
+                <span class="text-[10px] sm:text-xs uppercase tracking-[0.4em] sm:tracking-ultra text-qpi-gold font-bold block px-2 drop-shadow-md">
+                    Quantro Planlytics International
+                </span>
+                <h1 class="text-4xl sm:text-6xl md:text-8xl font-light tracking-tight leading-tight md:leading-none text-white px-2">
+                    Engineering <br>
+                    <span class="font-semibold bg-gradient-to-r from-white via-white to-qpi-gold bg-clip-text text-transparent drop-shadow-lg">
+                        Consultancy
+                    </span>
+                </h1>
+            </div>
+            <p class="max-w-3xl mx-auto text-xs sm:text-lg text-slate-300 md:text-slate-400 font-medium md:font-light tracking-[0.25em] sm:tracking-widest uppercase text-center px-4 drop-shadow">
+                U.A.E // India // Italy
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6 px-4 w-full max-w-xs sm:max-w-none mx-auto">
+                <a href="#engineering" class="w-full sm:w-auto px-8 py-4 bg-qpi-gold text-qpi-midnight font-bold text-xs uppercase tracking-widest transition-colors duration-300 hover:bg-white text-center shadow-2xl shadow-qpi-gold/20 backdrop-blur-sm">
+                    Engineering Services
+                </a>
+                <a href="#gallery" class="w-full sm:w-auto px-8 py-4 bg-black/40 border border-slate-300 text-white font-bold text-xs uppercase tracking-widest transition-all duration-300 hover:border-qpi-gold hover:text-qpi-gold text-center backdrop-blur-md">
+                    3D Interior Renders
+                </a>
+            </div>
+        </div>
+
+        <!-- Premium Status Indicator -->
+        <div class="absolute bottom-20 md:bottom-8 left-0 w-full z-10">
+            <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-[9px] md:text-xs tracking-widest text-slate-400 uppercase text-center md:text-left font-medium">
+                <div>Prequalification Platform // 2026 Layout</div>
+                <div class="flex items-center gap-2">
+                    <span class="w-2 h-2 bg-qpi-gold rounded-full animate-pulse"></span>
+                    Technical Precision // Structural Integrity
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT COMPANY STATEMENT -->
+    <section id="about" class="py-24 bg-qpi-midnight border-t border-slate-900/60 px-4">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+            <div class="md:col-span-4 space-y-2">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Corporate Profile</span>
+                <h2 class="text-3xl font-light tracking-tight text-white">About <span class="font-semibold">Us</span></h2>
+            </div>
+            <div class="md:col-span-8 bg-qpi-charcoal/40 border border-slate-800 p-6 sm:p-8 space-y-4 shadow-xl">
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                    Quantro Planlytics International LLC (QPI) is a startup company with a clear focus on interior fit-out, engineering services, construction, and trading of materials and equipment. We bring together practical expertise, innovative solutions, and a client-focused approach to deliver projects that meet both functional and aesthetic requirements.
+                </p>
+                <p class="text-sm text-slate-300 font-light leading-relaxed">
+                    Our strength lies in providing flexible, reliable, and cost-effective services that ensure every project is executed with attention to detail and professionalism. As a growing company, we aim to build our reputation through transparency, quality, and commitment to timely delivery. By combining technical knowledge with trusted procurement support, QPI offers integrated solutions for residential, commercial, and industrial projects across the UAE.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE MISSION MATRICES -->
+    <section class="py-12 bg-slate-950 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="border border-slate-900 bg-qpi-charcoal/20 p-6 sm:p-8 space-y-3 transition-transform duration-300 hover:border-slate-800">
+                <span class="text-xs font-mono text-qpi-gold uppercase tracking-widest">01 // Endeavours</span>
+                <h3 class="text-lg font-medium text-white">Engineering & Design</h3>
+                <p class="text-xs text-slate-400 font-light leading-relaxed">Building excellence through a blend of deep engineering expertise, meticulous planning, and innovative design methodologies. We are committed to delivering reliable, sustainable, and high-performing solutions that address every aspect of today's complex challenges.</p>
+            </div>
+            <!-- Card 2 -->
+            <div class="border border-slate-900 bg-qpi-charcoal/20 p-6 sm:p-8 space-y-3 transition-transform duration-300 hover:border-slate-800">
+                <span class="text-xs font-mono text-qpi-gold uppercase tracking-widest">02 // Execution</span>
+                <h3 class="text-lg font-medium text-white">Construction Frameworks</h3>
+                <p class="text-xs text-slate-400 font-light leading-relaxed">From concept to completion, we ensure uncompromised quality, rigorous safety, and consistent excellence across every construction project. Through meticulous planning, skilled engineering, and proactive coordination, we deliver reliable, sustainable, and high-performing results.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="border border-slate-900 bg-qpi-charcoal/20 p-6 sm:p-8 space-y-3 transition-transform duration-300 hover:border-slate-800">
+                <span class="text-xs font-mono text-qpi-gold uppercase tracking-widest">03 // Solutions</span>
+                <h3 class="text-lg font-medium text-white">Strategic Planning</h3>
+                <p class="text-xs text-slate-400 font-light leading-relaxed">Empowering businesses with reliable trade solutions, strong networks, and sustainable growth strategies that drive long-term success. We provide market insight, strategic coordination, and efficient operational support to help organizations expand confidently.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE ENGINEERING & SERVICES MATRIX -->
+    <section id="engineering" class="py-24 bg-qpi-midnight px-4 border-t border-slate-900/60">
+        <div class="max-w-7xl mx-auto space-y-16">
+            <div class="space-y-3">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Structural & Practical Capabilities</span>
+                <h2 class="text-3xl md:text-5xl font-light tracking-tight text-white">Our Engineering <span class="font-semibold">Services</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Core Services -->
+                <div class="lg:col-span-6 bg-qpi-charcoal/50 border border-slate-800 p-6 sm:p-8 space-y-6 shadow-md">
+                    <h3 class="text-xl font-medium border-b border-slate-800 pb-3 text-qpi-gold uppercase tracking-wider text-xs">Core Engineering Modules</h3>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-200">1. Structural, Architectural & MEP drawings</h4>
+                            <p class="text-xs text-slate-400 mt-1 font-light leading-relaxed">We specialize in preparing high-quality Structural, Architectural & MEP drawings for new developments, modification works, and extension projects. Our team ensures that all drawings are precise, compliant with standards, and aligned with project requirements.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-200">2. Authority Approvals & Coordination</h4>
+                            <p class="text-xs text-slate-400 mt-1 font-light leading-relaxed">We provide complete support in obtaining approved drawings from the concerned authorities. This includes preparing required documentation, coordinating submissions, and ensuring timely approvals to avoid project delays.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-semibold text-slate-200">3. As-Built Drawings Preparation</h4>
+                            <p class="text-xs text-slate-400 mt-1 font-light leading-relaxed">We deliver accurate As-Built drawings that reflect the final constructed conditions of the project. These documents are prepared with high attention to detail and verified against actual site execution.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Management Services -->
+                <div class="lg:col-span-6 bg-qpi-charcoal/50 border border-slate-800 p-6 sm:p-8 space-y-6 shadow-md">
+                    <h3 class="text-xl font-medium border-b border-slate-800 pb-3 text-qpi-gold uppercase tracking-wider text-xs">Project Management Control System</h3>
+                    
+                    <ul class="space-y-4 text-xs font-light text-slate-300">
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">01 /</span> <span>Quantity surveying & Complete Estimation support</span></li>
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">02 /</span> <span>Subcontractor's Appointment support - External Reference</span></li>
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">03 /</span> <span>Preparation of Baseline Program for Tender & Projects</span></li>
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">04 /</span> <span>Support for Submission of Weekly/Bi-weekly/Monthly Progress Report from Primavera P6</span></li>
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">05 /</span> <span>Claim support for Both Cost and Extension of Time (EOT)</span></li>
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">06 /</span> <span>Complete Quantity Analysis with Tender and IFC package</span></li>
+                        <li class="flex items-start gap-3"><span class="text-qpi-gold font-bold">07 /</span> <span>Supply of ITPs & MSRA (Inspection & Test Plans / Method Statement Risk Assessment)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIM SERVICES SECTION -->
+    <section class="py-24 bg-slate-950 px-4 border-t border-slate-900/60">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-5 space-y-4">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Digital Lifecycle Twin</span>
+                <h2 class="text-3xl font-light tracking-tight text-white">BIM Services <span class="font-semibold">Offered</span></h2>
+                <p class="text-sm text-slate-400 font-light leading-relaxed">
+                    QPI provides comprehensive Building Information Modeling (BIM) services to support the entire project lifecycle, ensuring accuracy, efficiency, and flawless team collaboration.
+                </p>
+            </div>
+            <div class="lg:col-span-7 grid grid-cols-1 sm:cols-2 gap-4">
+                <div class="p-6 bg-qpi-charcoal/20 border border-slate-900 shadow-sm">
+                    <span class="text-xs font-mono text-qpi-gold block mb-1">01 // VISUALIZATION</span>
+                    <h4 class="text-sm font-semibold text-white mb-1">3D Modeling</h4>
+                    <p class="text-xs text-slate-400 font-light">Creation of precise 3D models for complex architectural, structural, and heavy MEP systems.</p>
+                </div>
+                <div class="p-6 bg-qpi-charcoal/20 border border-slate-900 shadow-sm">
+                    <span class="text-xs font-mono text-qpi-gold block mb-1">02 // INTEGRITY</span>
+                    <h4 class="text-sm font-semibold text-white mb-1">Clash Detection & Coordination</h4>
+                    <p class="text-xs text-slate-400 font-light">Identifying and resolving design structural conflicts before construction to minimize on-site errors and delays.</p>
+                </div>
+                <div class="p-6 bg-qpi-charcoal/20 border border-slate-900 shadow-sm">
+                    <span class="text-xs font-mono text-qpi-gold block mb-1">03 // ANALYTICS</span>
+                    <h4 class="text-sm font-semibold text-white mb-1">Quantity Take-offs</h4>
+                    <p class="text-xs text-slate-400 font-light">Accurate automated extraction of spatial material quantities for commercial budgeting and tender purposes.</p>
+                </div>
+                <div class="p-6 bg-qpi-charcoal/20 border border-slate-900 shadow-sm">
+                    <span class="text-xs font-mono text-qpi-gold block mb-1">04 // LIFECYCLE</span>
+                    <h4 class="text-sm font-semibold text-white mb-1">As-Built Asset Models</h4>
+                    <p class="text-xs text-slate-400 font-light">Delivering highly accurate as-built models to support ongoing corporate facility management and operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECIALITY WORKS & GLOBAL SOURCING -->
+    <section id="specialities" class="py-24 bg-qpi-midnight px-4 border-t border-slate-900/60">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="space-y-2">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Materials & High-End Finishes</span>
+                <h2 class="text-3xl font-light text-white">Speciality Works & <span class="font-semibold">Trading Sourcing</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                <!-- Granite & Marble -->
+                <div class="lg:col-span-7 bg-qpi-charcoal/30 border border-slate-800 p-6 sm:p-8 space-y-4 shadow-md">
+                    <h3 class="text-sm uppercase tracking-widest text-qpi-gold font-semibold">Granite, Marble & High End Finishes</h3>
+                    <p class="text-xs text-slate-300 font-light leading-relaxed">
+                        QPI specializes in premium granite, marble, and natural stone solutions, providing sophisticated flooring, cladding, countertops, and decorative surfaces for residential, commercial, and mixed-use developments. We work with both locally sourced and imported stones in polished, honed, and textured finishes, tailored to complement modern UAE architectural aesthetics.
+                    </p>
+                    <p class="text-xs text-slate-300 font-light leading-relaxed">
+                        Our experienced team ensures precision installation, seamless joints, and durable finishes, combining technical expertise with creative design to enhance every project's visual appeal. From luxurious villas to high-rise towers, QPI transforms surfaces into elegant, high-quality architectural features that meet regulatory standards.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-800/80 text-xs text-slate-400 font-light">
+                        <div class="bg-black/10 p-3 border border-slate-900/50">
+                            <span class="font-medium text-white block mb-1">Comprehensive Floorings</span>
+                            Vinyl, premium tiles, engineered hardwood, and high-performance industrial epoxy coatings.
+                        </div>
+                        <div class="bg-black/10 p-3 border border-slate-900/50">
+                            <span class="font-medium text-white block mb-1">Fit-Out & Renovation</span>
+                            Turnkey space engineering, structural modifications, interior wall configurations, and furnishings.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Global Import Tracking -->
+                <div class="lg:col-span-5 bg-slate-950 border border-slate-900 p-6 sm:p-8 space-y-6 shadow-md">
+                    <div>
+                        <h3 class="text-sm uppercase tracking-widest text-white font-semibold">Trading Import & Export</h3>
+                        <p class="text-[11px] text-slate-400 mt-1 font-light">Handling diverse logistics streams sourced exclusively from verified, reputable global networks across UAE, India, and Italy.</p>
+                    </div>
+
+                    <ol class="space-y-3 text-xs font-light text-slate-300">
+                        <li class="flex gap-2"><span class="text-qpi-gold font-mono font-bold">1.</span> <span><strong>Comprehensive Imports:</strong> Handling all luxury categories except restricted items (gold, vehicles, fuels).</span></li>
+                        <li class="flex gap-2"><span class="text-qpi-gold font-mono font-bold">2.</span> <span><strong>Architectural Materials:</strong> Premium global granite, marble, and specialized ceramics.</span></li>
+                        <li class="flex gap-2"><span class="text-qpi-gold font-mono font-bold">3.</span> <span><strong>Artisanal Metal Statues:</strong> High-quality architectural metal statues crafted by traditional artisans.</span></li>
+                        <li class="flex gap-2"><span class="text-qpi-gold font-mono font-bold">4.</span> <span><strong>Stone Sculptures:</strong> Finely carved stone masterworks optimized for structural landscaping.</span></li>
+                        <li class="flex gap-2"><span class="text-qpi-gold font-mono font-bold">5.</span> <span><strong>Traditional Sourcing:</strong> Sourcing authentic cultural artifacts representing India's heritage craftsmanship.</span></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LUXURY 3D INTERIOR DESIGN SHOWCASE (CAROUSEL) -->
+    <section id="gallery" class="py-24 bg-qpi-midnight px-4 overflow-hidden border-t border-slate-900/60">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-10 space-y-2">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Visual Standards</span>
+                <h2 class="text-3xl md:text-5xl font-light tracking-tight text-white">Luxury 3D <span class="font-semibold">Interior Renders</span></h2>
+                <p class="text-xs md:text-sm text-slate-400 max-w-md font-light">Explore high-fidelity space aesthetics engineered by QPI design leads.</p>
+            </div>
+
+            <!-- Horizontal Carousel Block -->
+            <div id="carouselContainer" class="flex gap-6 overflow-x-auto pb-6 pt-2 snap-x snap-mandatory no-scrollbar scroll-smooth">
+                
+                <!-- Render Card 1 -->
+                <div class="min-w-[85%] sm:min-w-[45%] lg:min-w-[32%] bg-qpi-charcoal/30 border border-slate-900 snap-center flex-shrink-0 group shadow-lg">
+                    <div class="h-64 sm:h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80" alt="Luxury Living Concept" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-qpi-midnight via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[9px] uppercase tracking-widest text-qpi-gold font-mono">Villa Concept // Spatial Design</span>
+                        <h4 class="text-base font-medium text-white">Ultra-Luxury Modern Living Lounge</h4>
+                    </div>
+                </div>
+
+                <!-- Render Card 2 -->
+                <div class="min-w-[85%] sm:min-w-[45%] lg:min-w-[32%] bg-qpi-charcoal/30 border border-slate-900 snap-center flex-shrink-0 group shadow-lg">
+                    <div class="h-64 sm:h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Executive HQ Landscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-qpi-midnight via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[9px] uppercase tracking-widest text-qpi-gold font-mono">Corporate Space // High-End Execution</span>
+                        <h4 class="text-base font-medium text-white">Premium Executive Corporate HQ</h4>
+                    </div>
+                </div>
+
+                <!-- Render Card 3 -->
+                <div class="min-w-[85%] sm:min-w-[45%] lg:min-w-[32%] bg-qpi-charcoal/30 border border-slate-900 snap-center flex-shrink-0 group shadow-lg">
+                    <div class="h-64 sm:h-80 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=800&q=80" alt="Marble Lobby Architecture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-qpi-midnight via-transparent to-transparent"></div>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <span class="text-[9px] uppercase tracking-widest text-qpi-gold font-mono">Material Sourcing // Premium Stone</span>
+                        <h4 class="text-base font-medium text-white">Bookmatched Calacatta Marble Lobby</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIFIED GALLERY CONTROLLER BUTTON -->
+            <div class="flex justify-center mt-6">
+                <button onclick="nextSlide()" class="px-6 py-3.5 border border-qpi-gold text-qpi-gold font-semibold text-xs uppercase tracking-widest transition-all hover:bg-qpi-gold hover:text-qpi-midnight active:scale-95 flex items-center gap-2 shadow-lg shadow-black/20">
+                    <span>Next Project</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL TEAM MATRIX OVERVIEW -->
+    <section id="team" class="py-24 bg-slate-950 px-4 border-t border-slate-900/60">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="space-y-2">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Human Infrastructure</span>
+                <h2 class="text-3xl font-light text-white">Our Creative & <span class="font-semibold">Technical Team</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Member 1 -->
+                <div class="bg-qpi-charcoal/30 border border-slate-900 p-6 space-y-3 shadow-md">
+                    <div class="text-xs uppercase font-mono tracking-widest text-qpi-gold">Design Track //</div>
+                    <h4 class="text-base font-semibold text-white">Lead Architects</h4>
+                    <p class="text-xs text-slate-400 font-light leading-relaxed">Our lead architects provide expert guidance in delivering innovative and functional designs, preparing drawings fully compliant with authority approval standards, producing high-quality 3D renders, and ensuring precise construction documentation.</p>
+                </div>
+                <!-- Member 2 -->
+                <div class="bg-qpi-charcoal/30 border border-slate-900 p-6 space-y-3 shadow-md">
+                    <div class="text-xs uppercase font-mono tracking-widest text-qpi-gold">Operations Track //</div>
+                    <h4 class="text-base font-semibold text-white">Project Managers</h4>
+                    <p class="text-xs text-slate-400 font-light leading-relaxed">Our project managers, with over 10 years of experience, are accredited G+ unlimited license holders and PMP certified, expertly managing every project phase, coordinate multidisciplinary teams, schedules, and budgets.</p>
+                </div>
+                <!-- Member 3 -->
+                <div class="bg-qpi-charcoal/30 border border-slate-900 p-6 space-y-3 shadow-md">
+                    <div class="text-xs uppercase font-mono tracking-widest text-qpi-gold">Calculations Track //</div>
+                    <h4 class="text-base font-semibold text-white">Structural Engineers</h4>
+                    <p class="text-xs text-slate-400 font-light leading-relaxed">Our structural engineering team applies state-of-the-art software like ETABS, SAFE, STAAD Pro, and SAP2000 to deliver accurate, compliant designs and detailed calculations across all phases of structural analysis and site modeling.</p>
+                </div>
+                <!-- Member 4 -->
+                <div class="bg-qpi-charcoal/30 border border-slate-900 p-6 space-y-3 shadow-md">
+                    <div class="text-xs uppercase font-mono tracking-widest text-qpi-gold">Controls Track //</div>
+                    <h4 class="text-base font-semibold text-white">Planning & Estimation Engineers</h4>
+                    <p class="text-xs text-slate-400 font-light leading-relaxed">Our planning and estimation team leverages advanced software such as Primavera P6, MS Project, and AutoCAD to develop accurate schedules, cost estimates, and resource tracking frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LEGAL REGULATORY CREDENTIALS MATRIX -->
+    <section id="credentials" class="py-24 bg-qpi-midnight px-4 border-t border-slate-900/60">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="space-y-2">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Compliance and Verification</span>
+                <h2 class="text-3xl font-light text-white">Regulatory <span class="font-semibold">Licensing & Credentials</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-xs font-light">
+                <!-- License Overview -->
+                <div class="bg-qpi-charcoal/40 border border-slate-800 p-6 space-y-4 shadow-md">
+                    <div class="border-b border-slate-800 pb-2 flex justify-between items-center">
+                        <span class="font-semibold uppercase tracking-wider text-slate-300">Commercial License</span>
+                        <span class="px-2 py-0.5 text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-900 font-mono">ACTIVE</span>
+                    </div>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><strong class="text-white">Entity Name:</strong> Quantro Planlytics International FZC LLC</li>
+                        <li><strong class="text-white">License No:</strong> 262264197888</li>
+                        <li><strong class="text-white">Registration No:</strong> 262364197888</li>
+                        <li><strong class="text-white">Authority:</strong> Ajman NuVentures Centre Free Zone</li>
+                        <li><strong class="text-white">Incorporation Law:</strong> Amiri Decree No. 15 of 2023</li>
+                    </ul>
+                </div>
+
+                <!-- Tax Registration -->
+                <div class="bg-qpi-charcoal/40 border border-slate-800 p-6 space-y-4 shadow-md">
+                    <div class="border-b border-slate-800 pb-2 flex justify-between items-center">
+                        <span class="font-semibold uppercase tracking-wider text-slate-300">Federal Tax Authority</span>
+                        <span class="px-2 py-0.5 text-[10px] bg-emerald-950 text-emerald-400 border border-emerald-900 font-mono">REGISTERED</span>
+                    </div>
+                    <ul class="space-y-2 text-slate-400">
+                        <li><strong class="text-white">Corporate Tax TRN:</strong> 105150932900001</li>
+                        <li><strong class="text-white">Decree Law Standard:</strong> Federal Decree-Law No. 47 of 2022</li>
+                        <li><strong class="text-white">First Tax Period:</strong> 01/09/2025 to 31/12/2026</li>
+                        <li><strong class="text-white">Return Filing Due Date:</strong> 30/09/2027</li>
+                    </ul>
+                </div>
+
+                <!-- Verified Activities -->
+                <div class="bg-qpi-charcoal/40 border border-slate-800 p-6 space-y-4 shadow-md">
+                    <div class="border-b border-slate-800 pb-2 flex justify-between items-center">
+                        <span class="font-semibold uppercase tracking-wider text-slate-300">Permitted Operations</span>
+                        <span class="px-2 py-0.5 text-[10px] bg-qpi-gold/10 text-qpi-gold border border-qpi-gold/30 font-mono">APPROVED</span>
+                    </div>
+                    <div class="grid grid-cols-1 gap-1 text-[11px] text-slate-400">
+                        <div>• Engineering Consultancy</div>
+                        <div>• General Trading Import & Export</div>
+                        <div>• Project Management Services & Consultancy</div>
+                        <div>• Interior Design & Landscape Architecture</div>
+                        <div>• Building & Construction Materials Sourcing</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTAKE REQUEST SYSTEM -->
+    <section id="contact" class="py-24 bg-gradient-to-b from-slate-950 to-qpi-midnight px-4">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <div class="text-center space-y-2">
+                <span class="text-xs font-bold tracking-widestpx text-qpi-gold uppercase block">Business Enquiries</span>
+                <h2 class="text-3xl md:text-5xl font-light tracking-tight text-white">Submit An <span class="font-semibold">Enquiry</span></h2>
+            </div>
+
+            <div class="bg-qpi-charcoal/30 border border-slate-900/80 p-6 sm:p-10 backdrop-blur-sm shadow-2xl">
+                <!-- Using formspree.io as a clean background layer to direct variables cleanly to the company outlook email context safely -->
+                <form action="https://formspree.io/f/mnqeogvo" method="POST" class="space-y-5">
+                    <!-- Hidden configuration field to explicitly route data natively to your exact business destination address -->
+                    <input type="hidden" name="_to" value="Quantroplanlytics@outlook.com">
+                    
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] uppercase tracking-widest text-slate-400 font-medium">Your Name / Company Name</label>
+                        <input type="text" name="name" required class="w-full bg-qpi-midnight/60 border border-slate-800 px-4 py-3 text-xs text-white focus:outline-none focus:border-qpi-gold" placeholder="John Doe">
+                    </div>
+                    
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] uppercase tracking-widest text-slate-400 font-medium">Your Contact Email</label>
+                        <input type="email" name="email" required class="w-full bg-qpi-midnight/60 border border-slate-800 px-4 py-3 text-xs text-white focus:outline-none focus:border-qpi-gold" placeholder="client@company.com">
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] uppercase tracking-widest text-slate-400 font-medium">Discipline Track Focus</label>
+                        <select name="discipline" class="w-full bg-qpi-midnight/60 border border-slate-800 px-4 py-3 text-xs text-slate-400 focus:outline-none focus:border-qpi-gold">
+                            <option>Engineering Consultancy (Structural / Architectural / MEP)</option>
+                            <option>BIM Asset Modeling & Clash Matrix Coordination</option>
+                            <option>Quantity Surveying, Estimations & Primavera Program Analytics</option>
+                            <option>Luxury Turnkey Fit-Out Works & Marble Finishes</option>
+                            <option>Global Sourcing Trade Procurement Sourcing</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-1.5">
+                        <label class="text-[9px] uppercase tracking-widest text-slate-400 font-medium">Project Outline Parameter & Requirements</label>
+                        <textarea name="message" rows="4" required class="w-full bg-qpi-midnight/60 border border-slate-800 px-4 py-3 text-xs text-white focus:outline-none focus:border-qpi-gold" placeholder="Please type your detailed requirements here..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full py-3.5 bg-qpi-gold text-qpi-midnight font-bold text-xs uppercase tracking-widest hover:bg-white transition-colors duration-300">
+                        Submit Enquiry Directly
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SYSTEM FOOTER -->
+    <footer class="border-t border-slate-900 bg-slate-950 text-center py-8 text-slate-600 text-[9px] tracking-widest uppercase px-4">
+        <div>© 2026 Quantro Planlytics International LLC. All rights reserved.</div>
+        <div class="text-qpi-gold/40 mt-1">U.A.E • India • Italy // Office Email: Quantroplanlytics@outlook.com</div>
+    </footer>
+
+    <!-- OFFICIAL WHATSAPP FLOATING BUTTON WITH LOGO -->
+    <a href="https://wa.me/971508234636" target="_blank" rel="noopener noreferrer" class="fixed bottom-20 right-4 z-50 bg-[#25D366] p-3.5 rounded-full shadow-xl shadow-emerald-950/40 hover:bg-[#20ba5a] transition-all active:scale-95 flex items-center justify-center" aria-label="Chat on WhatsApp">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.557-5.34 11.895-11.953 11.895-2.006-.001-3.973-.51-5.713-1.479L0 24zm6.59-3.522l.38.225c1.551.92 3.566 1.405 5.621 1.406 5.8 0 10.521-4.72 10.525-10.522.002-2.81-1.093-5.452-3.084-7.446C18.247 2.147 15.6 1.05 12.79 1.05c-5.807 0-10.525 4.72-10.529 10.523-.001 2.11.55 4.168 1.597 5.96l.247.424-1.056 3.86 3.957-1.037zM17.46 15.4c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289-.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        </svg>
+    </a>
+
+    <!-- STICKY MOBILE BOTTOM BAR -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-qpi-midnight/95 backdrop-blur-xl border-t border-slate-800/80 flex justify-around items-center h-16 md:hidden shadow-2xl">
+        <a href="#hero" class="flex flex-col items-center justify-center text-[10px] uppercase tracking-widest text-slate-300 font-semibold active:text-qpi-gold focus:text-qpi-gold py-2 w-full text-center transition-colors">
+            <span>Home</span>
+        </a>
+        <a href="#engineering" class="flex flex-col items-center justify-center text-[10px] uppercase tracking-widest text-slate-300 font-semibold active:text-qpi-gold focus:text-qpi-gold py-2 w-full text-center transition-colors">
+            <span>Engineering</span>
+        </a>
+        <a href="#specialities" class="flex flex-col items-center justify-center text-[10px] uppercase tracking-widest text-slate-300 font-semibold active:text-qpi-gold focus:text-qpi-gold py-2 w-full text-center transition-colors">
+            <span>Specialities</span>
+        </a>
+        <a href="#contact" class="flex flex-col items-center justify-center text-[10px] uppercase tracking-widest text-qpi-gold font-bold py-2 w-full text-center transition-colors">
+            <span>Enquiry</span>
+        </a>
+    </div>
+
+    <!-- CAROUSEL SCRIPT -->
+    <script>
+        function nextSlide() {
+            const container = document.getElementById('carouselContainer');
+            const totalWidth = container.scrollWidth - container.clientWidth;
+            if (container.scrollLeft >= totalWidth - 10) {
+                container.scrollTo({ left: 0, behavior: 'smooth' });
+            } else {
+                const cardWidth = container.firstElementChild.clientWidth + 24;
+                container.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            }
+        }
+    </script>
+
+</body>
+</html>
